@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="Logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars" alt="">
+        <img src="moon.png" id="moon" alt="">
+        <img src="mountains_behind.png" id="mountains_behind" alt="">
+        <a href="#" id="btn">Explore</a>
+        <img src="mountains_front.png" id="mountains_front" alt="">
+    </section>
+    <div class="sec" id="sec">
+            <h2>Home</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste recusandae distinctio dolor omnis facere dolorem cum, nisi porro quas nam quasi? Ducimus, dolorem ea porro laborum odit rerum ullam repellendus numquam possimus cupiditate modi fugit, unde voluptates velit vel distinctio, nobis veniam voluptas libero quia rem doloremque labore ad nulla. Architecto, totam! Corrupti laborum vel quaerat amet impedit dolorem quia aliquam soluta illum quo quibusdam enim itaque sapiente magni voluptate dicta, a quas! Suscipit, deserunt aspernatur voluptatem, sunt quod pariatur modi, nihil nobis aut molestiae delectus atque! Atque esse iusto molestiae quibusdam? Inventore quaerat sit dolor laboriosam commodi expedita namLorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa velit dignissimos nesciunt laborum et cumque natus nam harum earum similique commodi eligendi, saepe accusamus atque nisi sequi. Tenetur asperiores reprehenderit sit. Provident consectetur inventore numquam, ullam quo veniam, sit iure quidem vero quia placeat fugit perferendis maiores ut vel libero porro nihil minima repellendus et quasi optio soluta. Quisquam corporis rerum enim mollitia repellat ipsum quasi, culpa ea molestiae ad modi maxime, quos eaque officiis numquam? Omnis inventore tempore nemo maxime? Non sapiente nulla a, quisquam pariatur dicta sequi unde necessitatibus perspiciatis. Commodi at officiis consequuntur, accusamus quia distinctio quae.<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quia aperiam harum libero quas. Commodi fugit itaque est tempore aperiam, in maxime numquam placeat reiciendis quo unde adipisci illum, cum alias sed possimus? Fuga optio corrupti, cum aspernatur molestias, dolores, sapiente sit deserunt ratione error excepturi? Sed nulla, in libero hic cumque tempore necessitatibus voluptatem sunt omnis sequi, culpa animi eveniet beatae enim delectus amet quas sint quibusdam! Error labore veniam fugit illo expedita praesentium magni? Atque animi officiis maiores nihil! Eos id totam quidem voluptate dolor voluptatum deserunt dignissimos, repellat incidunt quas quo. Eveniet pariatur ipsum quis dolorem sit!<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa velit dignissimos nesciunt laborum et cumque natus nam harum earum similique commodi eligendi, saepe accusamus atque nisi sequi. Tenetur asperiores reprehenderit sit. Provident consectetur in? Omnis inventore tempore nemo maxime? Non sapiente nulla a, quisquam pariatur dicta sequi unde necessitatibus perspiciatis. Commodi at officiis consequuntur, accusamus quia distinctio quae.<br></p>
+    </div>
+
+     <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn'); 
+        let mountains_front = document.getElementById('mountains_fronts');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25  + 'px';
+            moon.style.top = value * 1.05  + 'px';
+            mountains_behind.style.left = value * 0.05  + 'px';
+            mountains_front.style.left = value * 0.05  + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            btn.style.margintop = value * 1.5  + 'px';
+            header.style.top = value * 0.5  + 'px';
+        })
+     </script>   
+      
+</body>
+</html>
